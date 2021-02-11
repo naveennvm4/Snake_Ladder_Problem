@@ -1,11 +1,35 @@
 public class SnakeLadder {
-	final static int PLAYER_1=0;
-	public static void main(String args[])
+	final static int FINAL_POSITION=100;
+	final static int INITIAL_POSITION=0;
+	final static int LADDER=1;
+	final static int SNAKE=2;
+	public static void main(String[] args)
 	{
-	int value;
-	System.out.println("Start the game");
-	System.out.println("Player1 Position is"+PLAYER_1);
-	Value = (int)(Math.random() *(6-1+1) +1);
-	System.out.println("Roll the die ="+ value);
+	int noPlay=0;
+	int position=0;
+	int die=0;
+	int play=(int)(Math.random()*10)%3;
+	System.out.println("chance "+Play);
+	if(play==noPlay)
+	{
+		System.out.println("pass the chance");
+	}
+	else
+	{
+	die = (int) (Math.random()*(6-1+1)+1);
+	System.out.println("Die value ="+die);
+		if(play==LADDER)
+		{
+		System.out.println("Ladder");
+		position=die+die;
+		System.out.println("Player Position =" +position);
+		}
+		else
+		{
+		System.out.println("Snake");
+		position=die-die;
+		System.out.println("Player Position =" +position);
+		}
+	}
 	}
 }
