@@ -10,6 +10,7 @@ public class SnakeLadder{
 	int position=0;
 	int die=0;
 	int noPlay=0;
+	int count=0;
 	Scanner sc=new Scanner(System.in);
 	System.out.println("Start the game");
 	String s="START";
@@ -37,6 +38,7 @@ public class SnakeLadder{
 		{
 			System.out.println("Player position = " +position);
 		}
+		count=count+1;
 		}
 	else
 	{
@@ -53,8 +55,9 @@ public class SnakeLadder{
 		{
 			System.out.println("Player position = " +position);
 		}
+		count=count+1;
+		}
 	}
-	}
+	System.out.println("Die has rolled for " +count+ " times");
 	}
 }
-
